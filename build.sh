@@ -4,4 +4,4 @@ cd "$(dirname "$0")"
 
 test -e build || mkdir build
 
-$1/scripting/spcomp src/tf2-dogfight.sp -obuild/tf2-dogfight.smx
+$1/scripting/spcomp src/tf2-dogfight.sp -E -obuild/tf2-dogfight.smx

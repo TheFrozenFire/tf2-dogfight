@@ -1,5 +1,9 @@
 #include <sourcemod>
 #include <sdktools>
+#include <tf2>
+#include <tf2_stocks>
+
+#pragma newdecls required
 
 public Plugin myinfo =
 {
@@ -10,12 +14,14 @@ public Plugin myinfo =
     url = "https://github.com/TheFrozenFire/tf2-dogfight"
 }
 
-#include "tf2-dogfight/events.sp"
-#include "tf2-dogfight/behaviours.sp"
+#include "tf2-dogfight/model.sp"
+#include "tf2-dogfight/behaviour.sp"
+#include "tf2-dogfight/event.sp"
 
 public void OnPluginStart()
 {
-    // Event hooks
-    HookEvent("player_spawn", Event_InitializePlayer);
-    HookEvent("player_death", Event_CreditKill);
+    DogfightEvents events = new DogfightEvent();
+
+    HookEvent("player_spawn", events.InitializePlayer);
+    HookEvent("player_death", events.CreditKill);
 }
