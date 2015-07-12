@@ -35,3 +35,19 @@ and match your own loadouts for increased variety. Possibilities include:
 * Black Box + Concheror/Gunboats - a low-altitude self-healer
 * Direct Hit + Battalion's Backup - sniper equivalent, maybe tanky
 * Beggar's Bazooka + Gunboats/Mantreads - low control, high altitude + damage
+
+## Mechanics
+
+### Goal possibilities
+
+#### Kill to Sudden Death
+
+More kills, more rockets. Rack up kills to gain the advantage. After any player
+gets a certain number of kills, the game switches to sudden death mode. In
+sudden death, all players are immediately respawned with the progress they
+have, and lose their ability to respawn. Last team standing wins.
+
+#### Respawn Backoff
+
+The longer the round lasts, the longer respawns take. Wipe out the other team
+to win.
