@@ -5,6 +5,11 @@
 
 #pragma newdecls required
 
+#include "tf2-dogfight/entity.sp"
+#include "tf2-dogfight/model.sp"
+#include "tf2-dogfight/behaviour.sp"
+#include "tf2-dogfight/event.sp"
+
 public Plugin myinfo =
 {
     name = "TF2 Dogfight",
@@ -13,10 +18,6 @@ public Plugin myinfo =
     version = "0.0.0.0",
     url = "https://github.com/TheFrozenFire/tf2-dogfight"
 }
-
-#include "tf2-dogfight/model.sp"
-#include "tf2-dogfight/behaviour.sp"
-#include "tf2-dogfight/event.sp"
 
 public void OnPluginStart()
 {

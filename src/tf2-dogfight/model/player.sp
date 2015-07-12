@@ -1,11 +1,22 @@
 methodmap DogfightModel_Player {
-    public char[][] Model_Player_GetRequiredLoadout(int client)
+    property ArrayList loadouts {}
+
+    public DogfightModel_Player()
     {
-        char loadout[][5];
+        this.loadouts = new ArrayList();
         
-        loadout[0] = "tf_weapon_rocketlauncher_airstrike";
-        loadout[1] = "tf_weapon_parachute";
+        DogfightEntity_Loadout loadout = new DogfightEntity_Loadout();
+        loadout.SetSlot(0, "tf_weapon_rocketlauncher_airstrike");
+        loadout.SetSlot(1, "tf_weapon_parachute");
+        this.loadouts.Push(loadout);
+    }
+
+    public DogfightEntity_Loadout GetRequiredLoadout(int client)
+    {
+        DogfightEntity_Loadout loadout;
         
+        loadout = this.loadouts.Get(0);
+    
         return loadout;
     }
 };

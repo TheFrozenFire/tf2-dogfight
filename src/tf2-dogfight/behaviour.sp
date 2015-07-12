@@ -1,8 +1,8 @@
 #include "behaviour/player.sp"
 
 methodmap DogfightBehaviour {
-    property DogfightModel model;
-    property DogfightBehaviour_Player player;
+    property DogfightModel model {}
+    property DogfightBehaviour_Player player {}
     
     public DogfightBehaviour()
     {

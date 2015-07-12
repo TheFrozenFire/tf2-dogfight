@@ -1,5 +1,5 @@
 methodmap DogfightEvent {
-    property DogfightBehaviour behaviour;
+    property DogfightBehaviour behaviour {}
     
     public DogfightEvents()
     {
